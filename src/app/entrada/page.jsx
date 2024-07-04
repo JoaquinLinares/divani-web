@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState} from 'react';
 import styles from "../page.module.css";
+import Image from 'next/image';
 
 const Entrada = () => {
   const [barcode, setBarcode] = useState('');
@@ -29,7 +30,7 @@ const Entrada = () => {
   return (
     <div className={`${styles.main} ${styles.fondo}`}>      
       <div className={styles.imageContainer}>
-      <img src="/Box-Transparent-PNG.png" alt="Box" className={styles.image} />
+      <Image src="/Box-Transparent-PNG.png" alt="Box" className={styles.image} width={500} height={500} />
             <p className={styles.titleIMG}>Agregar sus artículos</p>
       </div>
     </div>
